@@ -1,0 +1,29 @@
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin-inline: auto;
+  height: 4rem;
+}
+
+@media (max-width: 768px) {
+  .footer-wrapper {
+    max-width: 100%;
+    padding: 0 1.5rem;
+  }
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  color: #3481b5;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
