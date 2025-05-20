@@ -1,0 +1,25 @@
+<div class='toolbar-container'>
+  <div class='toolbar-title'>
+    <p>Toolbar</p>
+  </div>
+  <div class='toolbar-btn-container'>
+    <button class="tool-button"
+              [class.active]="activeTool() === 'rectangle'"
+              (click)="toolSelected.emit('rectangle')">
+        <svg class="tool-icon" viewBox="0 0 24 24">
+          <rect x="3" y="3" width="18" height="18" rx="1" fill="none" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        <span class="label">Rectangle</span>
+      </button>
+
+      <button class="tool-button"
+              [class.active]="activeTool() === 'star'"
+              (click)="toolSelected.emit('star')">
+        <svg class="tool-icon" viewBox="0 0 24 24">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                fill="none" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        <span class="label">Star</span>
+      </button>
+  </div>
+</div>
