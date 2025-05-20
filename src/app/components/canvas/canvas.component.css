@@ -1,0 +1,13 @@
+.canvas-wrapper {
+  width: 1300px;
+  min-height: 750px;
+  background-color: #CFCFCF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.canvas-pad {
+  background-color: white;
+}
+

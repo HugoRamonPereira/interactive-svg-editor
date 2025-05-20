@@ -1,0 +1,60 @@
+.toolbar-container {
+  background-color: white;
+  width: 5rem;
+  height: 750px;
+  margin-right: 2rem;
+  margin-bottom: 4px !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.toolbar-btn-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.toolbar-title {
+  border-bottom: 1px solid #d2d1d1;
+}
+
+.toolbar-title p {
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.tool-button {
+  background: none;
+  border: none;
+  color: black;
+  padding: 12px 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  width: 100%;
+
+  &:hover {
+    background-color:#3481b5;
+    color: white;
+  }
+
+  &.active {
+    background-color: #3481b5;
+  }
+}
+
+.tool-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.label {
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  color: currentColor;
+}
