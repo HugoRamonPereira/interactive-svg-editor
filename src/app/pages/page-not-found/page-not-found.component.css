@@ -1,0 +1,39 @@
+.not-found-wrapper {
+  width: 100%;
+  height: calc(100vh - 8rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.illustration-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+
+  a {
+    color: black;
+
+    &:hover {
+      color: #3481b5;
+    }
+  }
+}
+
+.homeBtn {
+  background-color: #3481b5;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+
+  &:hover {
+    background-color: #296891;
+  }
+}

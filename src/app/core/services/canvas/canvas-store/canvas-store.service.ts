@@ -1,12 +1,14 @@
 // core/services/canvas-store.service.ts
 import { Injectable, signal, ElementRef } from '@angular/core';
 import type { CanvasShape } from '../../../../components/canvas/canvas.component';
-import { DrawingService } from '../drawing/drawing.service';
+// I had to use Subject from rxjs to avoid Circular Dependency
 import { Subject } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class CanvasStoreService {
+  // This is from rxjs
   shapeUpdated$ = new Subject<void>();
+
   canvasElement = signal<ElementRef<HTMLCanvasElement> | null>(null);
   ctx = signal<CanvasRenderingContext2D | null>(null);
 
@@ -88,6 +90,7 @@ export class CanvasStoreService {
 
     this.shapes.update(shapes => shapes.map(s => (s.id === updated.id ? updated : s)));
 
+    // This was necessary to avoid infinite loop
     this.shapeUpdated$.next();
   }
 

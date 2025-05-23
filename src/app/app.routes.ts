@@ -11,7 +11,7 @@ export const routes: Routes = [
     children: [
       { path: '', component: HomeComponent },
       { path: 'pricing', component: PricingComponent, data: { title: 'Pricing' } },
+      { path: '**', component: PageNotFoundComponent, data: { title: 'Page Not Found' } },
     ],
   },
-  { path: '**', component: PageNotFoundComponent, data: { title: 'Page Not Found' } },
 ];
