@@ -1,0 +1,4 @@
+<main class="content-area">
+  <app-toolbar (toolSelected)="activeTool.set($event)"></app-toolbar>
+  <app-canvas [activeTool]="activeTool()"></app-canvas>
+</main>
