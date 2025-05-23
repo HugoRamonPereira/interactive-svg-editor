@@ -66,7 +66,6 @@ export class DrawingService {
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 
     this.store.shapes().forEach(shape => {
-      // Highlight selected shape
       if (shape.isSelected) {
         ctx.strokeStyle = '#4285F4';
         ctx.lineWidth = 3;

@@ -40,6 +40,7 @@ export class MouseEventsService {
     this.store.startY.set(y);
     this.store.isDrawingNow.set(true);
 
+    // Click on the shape you wish to make changes in order to see edit modal
     if (this.store.activeToolSignal() === 'configure') {
       const shape = this.store.findShapeAtPosition(x, y);
       if (shape) {
@@ -60,6 +61,7 @@ export class MouseEventsService {
     const currentX = event.clientX - rect.left;
     const currentY = event.clientY - rect.top;
 
+    // Code that allows dragging and movement of the shape into a new position
     if (this.store.isDragging()) {
       const shapeId = this.store.selectedShapeId();
       if (shapeId) {
@@ -110,6 +112,7 @@ export class MouseEventsService {
     }
   }
 
+  // Method to store new changes made to the shapes, when you let go of the mouse
   handleMouseUp(event: MouseEvent) {
     if (this.store.isDragging()) {
       this.store.isDragging.set(false);

@@ -12,6 +12,7 @@
         <button (click)="this.store.closeConfigPanel()">✕</button>
       </div>
 
+      <!-- Click on the shape you wish to make changes in order to see edit modal -->
       @if (this.store.configType() === 'rectangle') {
         <div>
           <label>Corner Radius:</label>
@@ -26,6 +27,7 @@
         </div>
       }
 
+      <!-- Click on the shape you wish to make changes in order to see edit modal -->
       @if (this.store.configType() === 'star') {
         <div class='config-star-panel'>
           <label>Points:</label>
