@@ -1,10 +1,47 @@
-# SVGenius - Your Interactive SVG Editor
+# Hugo Ramon Pereira
+
+# SVGenius - Your Interactive SVG Editor 
+
+SVGenius is an interactive SVG editor where you can add rectangles and stars and play with them by moving across the canvas and making some edits to them 
+
 
 This project was generated and developed using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.12.
 
 <!-- ![SVGenius demo](./assets/svgenius-preview.gif) -->
 ![SVGenius demo](./src/assets/svg-prev.gif)
 
+## Clone repository
+
+To clone this repository to your local machine, run the following command:
+
+```bash
+git clone https://github.com/HugoRamonPereira/svgenius.git
+```
+Then navigate into the project directory:
+
+```bash
+cd svgenius
+```
+
+Install the project dependencies using the command:
+
+```bash
+npm install
+```
+
+Make sure you have Node.js installed on your computer:
+
+You can check if you have Node.js by using the command:
+
+```bash
+node --version
+```
+
+If it shows a version like: v20.18.0 it means you already have it on your machine, otherwise you will have to install it by vising their website -> [Node.js](https://nodejs.org/).
+
+And there you can choose your operating system Windows, Linux or Mac and we strongly advise you to install the LTS version.
+
+Then you have your application ready to be used. Just follow the instructions for development server below or you can visit the Live Production on Vercel → [SVGenius on Vercel](https://svgenius-ten.vercel.app/).
 
 ## Development server
 
