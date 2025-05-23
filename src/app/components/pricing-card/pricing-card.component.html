@@ -1,0 +1,16 @@
+<div class="container">
+  @for (plan of plans; track plan.name) {
+    <div class="card" [class.popular]="plan.popular">
+      <h3>{{ plan.name }}</h3>
+      <div class="price">{{ plan.price }}</div>
+      <ul>
+        @for (feature of plan.features; track feature) {
+          <li>{{ feature }}</li>
+        }
+      </ul>
+      <button>
+        {{ plan.name === 'Free' ? 'Get Started' : 'Choose Plan' }}
+      </button>
+    </div>
+  }
+</div>

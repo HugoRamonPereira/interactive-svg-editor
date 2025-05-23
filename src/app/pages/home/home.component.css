@@ -1,0 +1,10 @@
+.content-area {
+  position: relative;
+  overflow: hidden;
+  background-color: #E8E8E8;
+  width: 100%;
+  height: calc(100vh - 8rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

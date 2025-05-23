@@ -1,16 +1,4 @@
 .app-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-}
-
-.content-area {
-  flex: 1;
-  position: relative;
-  overflow: hidden;
-  background-color: #E8E8E8;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

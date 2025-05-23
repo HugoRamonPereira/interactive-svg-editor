@@ -2,13 +2,17 @@ import { Component, signal } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from "../../components/header/header.component";
 import { FooterComponent } from "../../components/footer/footer.component";
-import { CanvasComponent } from "../../components/canvas/canvas.component";
-import { ToolbarComponent } from "../../components/toolbar/toolbar.component";
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-main-layout',
   standalone: true,
-  imports: [RouterModule, HeaderComponent, FooterComponent, CanvasComponent, ToolbarComponent],
+  imports: [
+    CommonModule,
+    RouterModule,
+    HeaderComponent,
+    FooterComponent
+],
   templateUrl: './main-layout.component.html',
   styleUrl: './main-layout.component.css',
 })
