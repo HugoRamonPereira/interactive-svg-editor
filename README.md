@@ -86,7 +86,7 @@ In case you run in trouble or input an incorrect url address by accident you hav
 
 ## SVGenius - Production - Vercel
 
-This application is online and deployed by [Vercel](https://vercel.com/) You can use this application online by visiting the website: [SVGenius](https:www.example.com)
+This application is online and deployed by [Vercel](https://vercel.com/) You can use this application online by visiting the website → [SVGenius on Vercel](https://svgenius-ten.vercel.app/)
 
 # License
 © Developed with a lot of &#10084; by Hugo Ramon Pereira -> [Portfolio](https://hugoramonpereira.dev/) -> [LinkedIn](https://www.linkedin.com/in/hugo-ramon-pereira/) 🇧🇷
