@@ -1,10 +1,8 @@
 <div class="app-container">
   <app-header />
-
   <main class="content-area">
-    <app-toolbar />
-    <app-canvas />
+    <app-toolbar (toolSelected)="activeTool.set($event)"></app-toolbar>
+    <app-canvas [activeTool]="activeTool()"></app-canvas>
   </main>
-
   <app-footer />
 </div>

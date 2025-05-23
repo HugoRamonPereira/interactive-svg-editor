@@ -8,5 +8,10 @@ import { Component, output, signal } from '@angular/core';
 })
 export class ToolbarComponent {
   toolSelected = output<string>();
-  activeTool = signal('select');
+  activeTool = signal('rectangle');
+
+  selectTool(tool: string) {
+    this.activeTool.set(tool);
+    this.toolSelected.emit(tool)
+  }
 }
